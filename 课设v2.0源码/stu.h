@@ -1,6 +1,7 @@
 #pragma once
 
 #ifndef _STU_H_
+#define _STU_H_
 
 
 #include<iostream>
@@ -33,19 +34,19 @@ enum {
 	EDIT
 };
 
-//²Ëµ¥²¿·ÖÉùÃ÷
+//èœå•éƒ¨åˆ†å£°æ˜
 int main_menu();
 
-//Ìí¼Ó²¿·ÖÉùÃ÷
+//æ·»åŠ éƒ¨åˆ†å£°æ˜
 void add(List& ps);
 
-//É¾³ı²¿·ÖÉùÃ÷
+//åˆ é™¤éƒ¨åˆ†å£°æ˜
 void del(List& ps);
 int del_main_menu();
 void del_single(List& ps);
 void del_all(List& ps);
 
-//²éÕÒ²¿·ÖÉùÃ÷
+//æŸ¥æ‰¾éƒ¨åˆ†å£°æ˜
 void sea(List& ps);
 int sea_main_menu();
 int sea_data_menu();
@@ -54,7 +55,7 @@ void search_by_postion(List& ps);
 void search_by_name(List& ps);
 void search_by_ID(List& ps);
 
-//ĞŞ¸Ä²¿·ÖÉùÃ÷
+//ä¿®æ”¹éƒ¨åˆ†å£°æ˜
 void edit(List& ps);
 int edit_main_menu();
 void edit_name(List& ps,int postion);
@@ -62,13 +63,13 @@ void edit_age(List& ps,int postion);
 void edit_sex(List& ps,int postion);
 void edit_ID(List& ps,int postion);
 
-//ÍË³ö²¿·ÖÉùÃ÷
+//é€€å‡ºéƒ¨åˆ†å£°æ˜
 void exit();
 
-//³õÊ¼»¯ÏßĞÔ±í
+//åˆå§‹åŒ–çº¿æ€§è¡¨
 void InitList(List& ps);
 
-//ÆäËû¹¦ÄÜ
+//å…¶ä»–åŠŸèƒ½
 int Is_empty(List& ps);
 int Is_full(List& ps);
 
